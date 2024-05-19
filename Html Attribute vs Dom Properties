@@ -1,1 +1,40 @@
 
+Html attributes vs dom properties
+____________________________________________
+
+
+When writing HTML source code, you can define attributes on your HTML elements. Then, once the browser parses your code, a corresponding DOM node will be created. This node is an object, and therefore it has properties.
+
+Attributes are defined by the html where as the properties by domain 
+
+Attributes initialise Dom properties, once the initialisation is done, attribute job is done
+
+
+Property value can change but attributes value can’t
+
+________________________________
+
+
+<input type="text" value="Name:">
+
+has 2 attributes (type and value).
+
+
+<input id="the-input" type="text" value="Name:">
+the corresponding DOM node will have id,type, and value properties (among others):
+
+
+
+You can access the html code by-
+
+
+
+/*
+document.getElementById('div1').addEventListener('click', () =>{
+document.getElementById('div1').style.backgroundColor = 'red'
+}
+)
+*/
+
+const item = document.getElementById('div1')
+item.style.color = 'red'
